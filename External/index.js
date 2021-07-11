@@ -3,9 +3,10 @@ const axios   = require('axios')
 
 const port = 8081;
 
+const app = express();
+
 app.use(express.json())
 
-const app = express();
 
 const internalURL = "http://13.229.239.43:8081/api/v1/internal"
 
