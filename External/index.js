@@ -35,7 +35,7 @@ app.get('/api/v1/add',async (request,response)=>{
     } catch(err){
       // handle the error and send response
       const errResponse = {
-        msg: 'got error'
+        msg: 'got error', err
       }
       response.send(errResponse)
       // console.log(err)
