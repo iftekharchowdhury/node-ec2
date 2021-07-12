@@ -10,6 +10,7 @@ app.use(express.json())
 
 const internalURL = "http://172.17.0.2:80/api/v1/internal"
 
+
 app.get('/status', (req, res) => res.send({status: "I'm alive!"}));
 
 app.get('/', (request,response) => {
